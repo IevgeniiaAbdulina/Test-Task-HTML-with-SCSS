@@ -1,0 +1,41 @@
+/* ----------------------------------------------
+[main Stylesheet]
+
+Project: Test task - HTML with SCSS (or Vue.js)
+---------------------------------------------- */
+
+/* ----------------------------------------------
+==== Table of Components ====
+
+* Template variables
+* Core styles
+    + Fonts
+    + Typography
+    + Header
+    + Main
+
+* Components
+    + Buttons
+    + Inputs
+    + Cards
+    + Avatars
+    + Icons
+---------------------------------------------- */
+
+/* ---------------------------------------------- 
+    ==== Template variables ==== */
+
+@import "variables";
+
+/* ----------------------------------------------
+    ==== Core styles ==== */
+ 
+@import "main";
+@import "fonts";
+
+/* ----------------------------------------------
+    ==== Components ==== 
+
+@import "components/buttons";
+@import "components/icons";
+---------------------------------------------- */

@@ -1,0 +1,48 @@
+/* ----------------------------------------------
+[main Stylesheet]
+
+Project: Test task - HTML with SCSS (or Vue.js)
+---------------------------------------------- */
+/* ----------------------------------------------
+==== Table of Components ====
+
+* Template variables
+* Core styles
+    + Fonts
+    + Typography
+    + Header
+    + Main
+
+* Components
+    + Buttons
+    + Inputs
+    + Cards
+    + Avatars
+    + Icons
+---------------------------------------------- */
+/* ---------------------------------------------- 
+    ==== Template variables ==== */
+/* ----------------------------------------------
+    ==== Core styles ==== */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1076px;
+  min-height: 100vh;
+  margin: 0 auto;
+  border: solid green;
+}
+
+/* ----------------------------------------------
+    ==== Components ==== 
+
+@import "components/buttons";
+@import "components/icons";
+---------------------------------------------- */
+/*# sourceMappingURL=index.css.map */
