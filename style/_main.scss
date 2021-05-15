@@ -89,8 +89,7 @@ section {
   &-header {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid $color-white;
-    padding: 10px 0 24px;
+    padding: 24px 0;
     margin: 0 22px;
 
     &-icon {
@@ -107,6 +106,13 @@ section {
       line-height: 28px;
       color: $color-white;
     }
+
+    
+  }
+
+  .divider {
+    margin: 0 22px;
+    border-bottom: 2px solid $color-white;
   }
 
   .subtitle {

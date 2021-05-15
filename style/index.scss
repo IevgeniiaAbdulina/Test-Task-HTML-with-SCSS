@@ -31,6 +31,7 @@ Project: Test task - HTML with SCSS (or Vue.js)
     ==== Core styles ==== */
  
 @import "main";
+@import "listpage";
 @import "fonts";
 
 /* ----------------------------------------------
@@ -38,3 +39,4 @@ Project: Test task - HTML with SCSS (or Vue.js)
 
 @import "components/buttons";
 @import "components/icons";
+@import "components/cards";

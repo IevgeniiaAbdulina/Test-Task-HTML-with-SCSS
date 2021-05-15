@@ -1,0 +1,135 @@
+// Listpage Style
+
+.header-list {
+    padding: 26px 22px;
+
+    .sort-list {
+        min-width: 330px;
+        height: 40px;
+        background: $color-white;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .selected {
+        background: $color-orange;
+        &:hover {
+            background: darken($color-orange, 8);
+            transition: all 0.8s
+          }
+    }
+
+    .search {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 26px 0;
+
+        .add-button {
+            background: $color-green url(./img/icons/add-ic.svg) no-repeat center;
+        }
+
+        .search-input {
+            width: 85%;
+            height: 40px;
+            padding: 10px 18px;
+            margin-left: 16px;
+            border-radius: 30px;
+            border: none;
+            background: $color-white;
+            overflow: hidden;
+        }
+
+    }
+}
+
+.divider {
+    margin: 0 22px;
+    border-bottom: 2px solid $color-white;
+}
+
+.wrapper {
+    padding: 0 22px;
+}
+
+// CARD STYLE
+
+.card {
+    .content {
+        padding: 24px;
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-left {
+            display: flex;
+        }
+
+        .car-icon {
+            width: 66px;
+            height: 25px;
+            background: url(./img/icons/car-ic.svg) no-repeat center;
+        }
+
+        .edit-button {
+            margin: 0 16px;
+            background: $color-green url(./img/icons/edit-ic.svg) no-repeat center;
+        }
+
+        .email-button {
+            background: $color-green url(./img/icons/email-ic.svg) no-repeat center;
+        }
+    }
+
+    &-divider {
+        margin-top: 24px;
+        border-bottom: 2px solid $color-blue;
+        border-radius: 2px;
+    }
+
+    // CARD CONTENT STYLE
+
+    .car-info {
+
+        &-label {
+            font-style: normal;
+            font-weight: $font-weight-regular;
+            font-size: 18px;
+            line-height: 21px;
+            color: $color-gray;
+        }
+
+        &-text {
+            font-style: normal;
+            font-weight: $font-weight-bold;
+            font-size: 20px;
+            line-height: 23px;
+            color: $color-blue;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 14px;
+
+            .special {
+                font-style: normal;
+                font-weight: $font-weight-bold;
+                font-size: 20px;
+                line-height: 23px;
+                color: $color-green;
+            }
+
+            .hidden {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
