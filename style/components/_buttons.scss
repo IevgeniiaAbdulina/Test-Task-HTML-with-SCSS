@@ -1,0 +1,21 @@
+.button {
+    height: 40px;
+    min-width: 156px;
+    padding: 8px 24px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+
+    // Text style
+    a {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: $font-weight-regular;
+        font-size: 18px;
+        line-height: 21px;
+        color: $color-white;
+    }
+}

@@ -10,20 +10,27 @@
     max-width: 1076px;
     min-height: 100vh;
     margin: 0 auto;
-    border: solid green;
+    direction: rtl;
+    font-family: $font-family;
+  }
+
+  main {
+    width: 100%;
+    height: 100vh;
+    background: $color-dark-blue;
   }
 
   .container {
-    padding: 12px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    border: solid palevioletred;
   }
 
+  // Header Section
+
   .topnav {
-    padding: 22px 0;
+    padding: 22px 12px;
     width: 100%;
 
     input {
@@ -38,11 +45,10 @@
 
   .user {
     border-top: 1px solid $color-light;
-    padding: 12px 0;
+    padding: 12px;
 
     &-info {
       display: flex;
-      justify-content: flex-end;
       align-items: center;
 
       &-title {
@@ -53,7 +59,6 @@
         line-height: 10px;
 
         p {
-          text-align: right;
           margin-right: 12px;
         }
 
@@ -68,3 +73,100 @@
       margin-top: 8px;
     }
   }
+
+
+  //  Form Section
+  //  Form Header Style 
+
+section {
+  padding: 16px 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $color-white;
+    padding: 10px 0 24px;
+    margin: 0 22px;
+
+    &-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    &-title {
+      margin-right: 12px;
+      font-style: normal;
+      font-weight: $font-weight-bold;
+      font-size: 24px;
+      line-height: 28px;
+      color: $color-white;
+    }
+  }
+
+  .subtitle {
+    text-align: center;
+    margin-top: 48px;
+    padding: 0 24px;
+    font-style: normal;
+    font-weight: $font-weight-regular;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-white;
+
+  }
+
+  form {
+    padding: 0 12px;
+
+    .input-box {
+      margin-top: 48px;
+    }
+    
+    label {
+      font-style: normal;
+      font-weight: $font-weight-regular;
+      font-size: 18px;
+      line-height: 21px;
+      color: $color-white;
+
+    }
+    input {
+      width: 100%;
+      height: 40px;
+      padding: 8px;
+      margin: 12px 0;
+      border-radius: 30px;
+      border: none;
+      background: $color-white;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 92px 0; 
+    }
+
+    .back-button {
+      background: $color-light-gray;
+      &:hover {
+        background: darken($color-light-gray, 8);
+        transition: all 0.8s
+      }
+    }
+
+    .submit-button {
+      background: $color-green;
+      &:hover {
+        background: darken( $color-green, 8);
+        transition: all 0.8s
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="yi">
+<html dir="rtl" lang="yi">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,7 @@
             </div>
             <div class="user">
                 <div class="user-info">
+                    <div class="user-info-icon"></div>
                     <div class="user-info-title">
                         <p>
                              ןכוסה םש
@@ -30,35 +31,46 @@
                             </p>
                         </div>
                     </div>
-                    <div class="user-info-icon"></div>
                 </div>
             </div>
         </header>
         <main>
             <section>
                 <div class="form">
-                    <div class="avatar">
-                        <div class="avatar-icon"></div>
-                        <div class="avatar-title"></div>
-                        <span class="divider"></span>
+                    <div class="form-header">
+                        <div class="form-header-icon">
+                            <img src="../style/img/user-2.png" alt="user image">
+                        </div>
+                        <div class="form-header-title">
+                            <p>תכרעמל הסינכ ריחמה תעצהב היפצ</p>
+                        </div>
                     </div>
                     <div class="subtitle">
-                        <p>שדח דוק תחילש לע ץחל דוק תלביק אל םא ,הסינכה דוק תא ןזה </p>
+                        <p>תא ןזה הסינכה דוק תלבקל
+                            דיינה ןופלטה רפסמ</p>
                     </div>
                     <form>
-                        <label for="first-line"></label><br>
-                        <input type="text" dir="rtl" id="first-line" name="first-line"><br>
-                        <label for="second-line"></label><br>
-                        <input type="text" dir="rtl" id="second-line" name="second-line"><br>
-                        <button type="submit" value="הסינכ">
-                            <span>ic</span>
-                            הסינכ
-                        </button>
-                        <button type="submit" value="לוטיב">
-                            <a href="#second-page">
-                                לוטיב
-                            </a>
-                        </button>
+                        <div class="input-box">
+                            <label for="first-line">שם משתמש</label><br>
+                            <input type="text" dir="rtl" id="first-line" name="first-line">
+                        </div>
+                        <div class="input-box">
+                            <label for="second-line">סיסמא</label><br>
+                            <input type="text" dir="rtl" id="second-line" name="second-line">
+                        </div>
+                        <div class="buttons">
+                            <button type="submit" class="button submit-button">
+                                <a href="./listpage.html">
+                                    כניסה
+                                </a>
+                                <span>ic</span>
+                            </button>
+                            <button type="submit" class="button back-button">
+                                <a href="#home">
+                                    ביטול
+                                </a>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </section>
