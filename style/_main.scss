@@ -105,6 +105,20 @@
         span {
           font-weight: $font-weight-bold;
         }
+
+        .user-info-title-sm {
+          display: block;
+          @media (min-width: $layout-breakpoint-small) {
+            display: none;
+          }
+        }
+
+        .user-info-title-lg {
+          display: none;
+          @media (min-width: $layout-breakpoint-small) {
+            display: block;
+          }
+        }
       }
     }
 
@@ -173,6 +187,14 @@ section {
     font-size: 24px;
     line-height: 28px;
     color: $color-white;
+    @media (min-width: $layout-breakpoint-small) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    @media (min-width: $layout-breakpoint-md) {
+      font-size: 48px;
+      line-height: 55px;
+    }
   }
 }
 
@@ -181,7 +203,6 @@ section {
   flex-direction: column;
   @media (min-width: $layout-breakpoint-small) {
     align-items: stretch;
-   
   }
 
   @media (min-width:  $layout-breakpoint-md) {
@@ -197,6 +218,7 @@ section {
     @media (min-width: $layout-breakpoint-small) {
       width: 56%;
       height: 5px;
+      margin: 0 auto;
       border-radius: 2px;
     }
   }
@@ -210,7 +232,6 @@ section {
     font-size: 24px;
     line-height: 28px;
     color: $color-white;
-
   }
 
   form {
@@ -232,8 +253,36 @@ section {
       font-size: 18px;
       line-height: 21px;
       color: $color-white;
+      @media (min-width: $layout-breakpoint-small) {
+        padding-right: 43px;
+      }
 
     }
+
+    .clear-button {
+      position: relative;
+        width: 14px;
+        height: 14px;
+        top: 40px;
+        left: 18px;
+        cursor: pointer;
+        float: left;
+        background: url(../style/img/clear.svg) no-repeat center;
+
+      @media (min-width: $layout-breakpoint-small) {
+        width: 20px;
+        height: 20px;
+        top: 42px;
+        left: 20px;
+      }
+      @media (min-width: $layout-breakpoint-md) {
+        width: 20px;
+        height: 20px;
+        top: 55px;
+        left: 40px;
+      }
+    }
+
     input {
       width: 100%;
       height: 40px;
@@ -258,7 +307,7 @@ section {
       margin: 92px 0; 
     }
 
-    .back-button {
+    .submit-button {
       background: $color-light-gray;
       &:hover {
         background: darken($color-light-gray, 8);
@@ -270,9 +319,17 @@ section {
         width: 350px;
         height: 58px;
       }
+
+      span {
+        padding: 10px 20px;
+        background: url(./img/arrow.svg) no-repeat center;
+        @media (min-width: $layout-breakpoint-small) {
+          padding: 20px;
+        }
+      }
     }
 
-    .submit-button {
+    .back-button {
       background: $color-green;
       &:hover {
         background: darken( $color-green, 8);

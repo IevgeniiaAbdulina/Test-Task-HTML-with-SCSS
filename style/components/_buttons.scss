@@ -18,6 +18,10 @@
         font-size: 18px;
         line-height: 21px;
         color: $color-white;
+        @media (min-width: $layout-breakpoint-small) {
+            font-size: 24px;
+            line-height: 28px;
+        }
     }
 }
 
