@@ -12,6 +12,10 @@
     margin: 0 auto;
     direction: rtl;
     font-family: $font-family;
+
+    @media (min-width: $layout-breakpoint-small) {
+      max-width: 100vw;
+    }
   }
 
   main {
@@ -35,7 +39,7 @@
     }
 
     @media (min-width: $layout-breakpoint-small) {
-      background: url(../style/img/desktop-background.png) no-repeat top / cover;
+      background: url(../style/img/desktop-background.png) no-repeat top / auto auto;
     }
   }
 
@@ -52,6 +56,10 @@
     padding: 22px 12px;
     width: 100%;
 
+    @media (min-width: $layout-breakpoint-small) {
+      display: none;
+    }
+
     input {
       width: 100%;
       height: 36px;
@@ -66,6 +74,15 @@
     border-top: 1px solid $color-light;
     padding: 12px;
 
+    @media (min-width: $layout-breakpoint-small) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+      padding: 20px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
     &-info {
       display: flex;
       align-items: center;
@@ -76,6 +93,10 @@
         font-style: normal;
         font-size: 10px;
         line-height: 10px;
+        @media (min-width: $layout-breakpoint-small) {
+          font-size: 16px;
+          line-height: 18px;
+        }
 
         p {
           margin-right: 12px;
@@ -88,8 +109,37 @@
     }
 
     &-subtitle {
-      color: $color-orange;
-      margin-top: 8px;
+      &-sm {
+        color: $color-orange;
+        margin-top: 8px;
+
+        @media (min-width: $layout-breakpoint-small) {
+          display: none;
+        }
+      }
+
+      
+    }
+  }
+
+  .user-subtitle-lg {
+    display: none;
+    
+    @media (min-width: $layout-breakpoint-small) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 76px;
+      padding: 0 62px;
+      font-style: normal;
+      font-weight: $font-weight-regular;
+      font-size: 16px;
+      line-height: 18px;
+      color: $color-dark-gray;
+
+      span {
+        font-weight: $font-weight-bold;
+      }
     }
   }
 
@@ -101,37 +151,54 @@ section {
   padding: 16px 10px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  margin: 0 22px;
+  @media (min-width: $layout-breakpoint-small) {
+    margin: 0 22%;
+  }
+
+  &-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &-title {
+    margin-right: 12px;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color-white;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
+  @media (min-width: $layout-breakpoint-small) {
+    align-items: stretch;
+   
+  }
 
-  &-header {
-    display: flex;
+  @media (min-width:  $layout-breakpoint-md) {
     align-items: center;
-    padding: 24px 0;
-    margin: 0 22px;
-
-    &-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-    }
-
-    &-title {
-      margin-right: 12px;
-      font-style: normal;
-      font-weight: $font-weight-bold;
-      font-size: 24px;
-      line-height: 28px;
-      color: $color-white;
-    }
-
-    
   }
 
   .divider {
     margin: 0 22px;
-    border-bottom: 2px solid $color-white;
+    height: 3px;
+    border-radius: 2px;
+    background: $color-white;
+
+    @media (min-width: $layout-breakpoint-small) {
+      width: 56%;
+      height: 5px;
+      border-radius: 2px;
+    }
   }
 
   .subtitle {
@@ -148,9 +215,15 @@ section {
 
   form {
     padding: 0 12px;
+    @media (min-width: $layout-breakpoint-md) {
+      min-width: fit-content;
+    }
 
     .input-box {
       margin-top: 48px;
+      @media (min-width: $layout-breakpoint-md) {
+        padding: 0 25%;
+      }
     }
     
     label {
@@ -169,6 +242,13 @@ section {
       border-radius: 30px;
       border: none;
       background: $color-white;
+      @media (min-width: $layout-breakpoint-md) {
+        max-width: 350px;
+        height: 58px;
+        padding: 10px;
+        margin: 15px 0;
+        border-radius: 35px;
+      }
     }
 
     .buttons {
@@ -184,6 +264,12 @@ section {
         background: darken($color-light-gray, 8);
         transition: all 0.8s
       }
+
+      @media (min-width: $layout-breakpoint-md) {
+        margin-right: 36px;
+        width: 350px;
+        height: 58px;
+      }
     }
 
     .submit-button {
@@ -191,6 +277,10 @@ section {
       &:hover {
         background: darken( $color-green, 8);
         transition: all 0.8s
+      }
+      @media (min-width: $layout-breakpoint-md) {
+        width: 350px;
+        height: 58px;
       }
     }
   }
