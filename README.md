@@ -13,7 +13,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="#">
+    <a href="https://github.com/IevgeniiaAbdulina/Test-Task-HTML-with-SCSS">
       Solution
     </a>
   </h3>
@@ -34,14 +34,17 @@
 
 ## Overview
 
-<img src="#" width="600">
-<img src="#" width="360">
+<img src="/style/img/screenshots/screenshot-loginpage-desktop.png" width="600">
+<img src="/style/img/screenshots/screenshot-loginpage-mobile.png" width="360">
+<img src="/style/img/screenshots/screenshot-list-desktop.png" width="600">
+<img src="/style/img/screenshots/screenshot-list-mobile.png" width="360">
 
 ### The challenge
 
 Users should be able to: 
 
 - You can see the pages with hover effects elements
+- You can click on a gray button on the Login screen and see the Second page with list of elements
 
 ### Built With
 
